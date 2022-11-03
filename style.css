@@ -27,6 +27,10 @@ main {
     margin: 40px;  
 }
 
+.text {
+    padding: 32px; 
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 40px; 
@@ -133,6 +137,9 @@ button img {
     }
     .header, .text-content {
         width: 100%; 
+    }
+    .text {
+        padding: unset; 
     }
     .header {
         max-width: 610px; 
