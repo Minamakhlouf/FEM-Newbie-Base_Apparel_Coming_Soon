@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif; 
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    display: flex; 
+    justify-content: center;
+}
+
+img {
+    width: 100%; 
+}
+
+main {
+    padding-bottom: 50px; 
+    max-width: 450px; 
+}
+
+.logo {
+    width: 100px; 
+    margin: 40px;  
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px; 
+    letter-spacing: 10.83px;
+    text-align: center;
+    line-height: 1.05; 
+    color: hsl(0, 6%, 24%); 
+    margin-top: 40px; 
+}
+
+h1 span {
+    font-weight: 300; 
+    color: hsl(0, 36%, 70%); 
+}
+
+p {
+    text-align: center;
+    margin-top: 32px; 
+    font-size: 14px; 
+    line-height: 1.6; 
+    color: hsl(0, 36%, 70%); 
+}
+
+form {
+    margin-top: 32px; 
+    position: relative; 
+    display: flex; 
+}
+
+input {
+    width: 100%; 
+    font-size: 14px; 
+    padding: 10px 20px; 
+    border-radius: 30px; 
+    border: 1px solid hsl(0, 36%, 70%); 
+    outline-color: hsl(0, 93%, 68%); 
+    color: hsl(0, 6%, 24%); 
+}
+
+::placeholder {
+    color: hsl(0, 36%, 70%); 
+}
+
+.error-logo {
+    width: 24px; 
+    height: 24px; 
+}
+
+.error {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    transform: translateY(120%); 
+    color: hsl(0, 93%, 68%); 
+}
+
+.error-and-button {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    height: 100%; 
+    display: flex; 
+    gap: 7px; 
+    align-items: center;
+}
+
+button {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+    width: 64px; 
+    border-radius: 30px; 
+    padding: 9px 20px; 
+    border: none; 
+}
+
+.hidden {
+    opacity: 0; 
+    transition: all 0.2s ease; 
+}
+
+button img {
+    width: 10px; 
+}
+
+@media screen and (min-width: 1110px) {
+    body {
+        position: relative; 
+        display: unset; 
+    }
+    .logo {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 158px; 
+    }
+    main {
+        display: flex; 
+        flex-direction: row-reverse;
+        min-height: 100vh; 
+        align-items: center;
+        padding-bottom: 0; 
+        max-width: unset; 
+    }
+    .header, .text-content {
+        width: 100%; 
+    }
+    .header {
+        max-width: 610px; 
+    }
+    h1 {
+        font-size: 64px; 
+        text-align: left; 
+    }
+    p {
+        font-size: 16px; 
+        text-align: left; 
+    }
+    .text-content {
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        margin-top: unset; 
+    }
+    .text {
+        max-width: 445px;
+    }
+}
